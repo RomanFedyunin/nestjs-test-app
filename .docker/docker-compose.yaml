@@ -8,4 +8,4 @@ services:
       - "3000:3000"
     volumes:
       - '../:/var/www/spex'
-    command: npm run start:dev
+    command: npm install && npm run start:dev
