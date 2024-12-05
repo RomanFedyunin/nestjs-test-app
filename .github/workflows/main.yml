@@ -1,0 +1,14 @@
+name: Launch app
+
+run-name: ${{ github.actor }} is launching an App
+on:
+  workflow_dispatch
+
+jobs:
+  launch_app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout️
+        uses: actions/checkout@v4
+      - run: cd .docker
+      - run: docker compose up
