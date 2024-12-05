@@ -10,5 +10,4 @@ jobs:
     steps:
       - name: Checkout️
         uses: actions/checkout@v4
-      - run: cd .docker
-      - run: ls -l
+      - run: cd .docker && docker compose up
